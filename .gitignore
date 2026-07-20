@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────
+#  .gitignore — keep the repo clean of local-only / generated junk
+#  Tracked on purpose: the deliverable *.svg, README.md and the
+#  GitHub workflow. The entire _build/ toolkit is local-only and
+#  NOT tracked (the SVGs are self-contained, so it isn't needed).
+# ─────────────────────────────────────────────────────────────
+
+# ===== OS junk =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ===== Node =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnp/
+.pnp.js
+
+# ===== Environment / secrets =====
+.env
+.env.*
+!.env.example
+*.local
+
+# ===== Logs & temp =====
+*.log
+*.tmp
+tmp/
+temp/
+
+# ─────────────────────────────────────────────────────────────
+#  _build/ — local-only build toolkit (generators, image data,
+#  screenshots, Chrome profile). The deliverable SVGs are fully
+#  self-contained, so none of this is needed in the repo.
+# ─────────────────────────────────────────────────────────────
+_build/
